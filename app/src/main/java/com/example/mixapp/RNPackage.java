@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 
 
 import com.example.mixapp.RNModule.ReactToast;
+import com.example.mixapp.RNView.TextViewManager;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -25,6 +26,10 @@ public class RNPackage implements ReactPackage {
     @NonNull
     @Override
     public List<ViewManager> createViewManagers(@NonNull ReactApplicationContext reactContext) {
-        return Collections.emptyList();
+        List<ViewManager> modules = new ArrayList<>();
+        modules.add(new TextViewManager());
+        return modules;
+
+
     }
 }
