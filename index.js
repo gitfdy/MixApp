@@ -39,7 +39,7 @@ class HelloWorld extends React.Component {
         const {inputValue} = this.state
         return (
             <View style={styles.container}>
-                <TextInput placeholder={"填入提示信息fix6"} style={styles.input} onChangeText={inputValue => this.setState({
+                <TextInput placeholder={"填入提示信息fix5"} style={styles.input} onChangeText={inputValue => this.setState({
                     inputValue
                 })}/>
                 <TouchableOpacity
@@ -74,7 +74,7 @@ class HelloWorld extends React.Component {
                                         alert(x)
                                         })
                                     }}>
-                                    <Text style={styles.hello}>跳转到activity 并获取返回结果</Text>
+                                    <Text style={styles.hello}>跳转到activity 并获取返回结果测试</Text>
                    </TouchableOpacity>
                    <TextView ref={v=>this.nativeText=v}  onClick={()=>this._onClick()} style={{ width: 200, height: 50, backgroundColor: "red" }} text="这是native视图" />
 
