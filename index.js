@@ -39,7 +39,7 @@ class HelloWorld extends React.Component {
         const {inputValue} = this.state
         return (
             <View style={styles.container}>
-                <TextInput placeholder={"提示信息"} style={styles.input} onChangeText={inputValue => this.setState({
+                <TextInput placeholder={"填入提示信息"} style={styles.input} onChangeText={inputValue => this.setState({
                     inputValue
                 })}/>
                 <TouchableOpacity
