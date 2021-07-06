@@ -39,7 +39,7 @@ class HelloWorld extends React.Component {
         const {inputValue} = this.state
         return (
             <View style={styles.container}>
-                <TextInput placeholder={"填入提示信息fix4"} style={styles.input} onChangeText={inputValue => this.setState({
+                <TextInput placeholder={"填入提示信息fix6"} style={styles.input} onChangeText={inputValue => this.setState({
                     inputValue
                 })}/>
                 <TouchableOpacity
@@ -52,7 +52,7 @@ class HelloWorld extends React.Component {
                         })
                         await ReactToast.usePromise(inputValue)
                     }}>
-                    <Text style={styles.hello}>调用原生方法并返回</Text>
+                    <Text style={styles.hello}>调用原生方法并返回6</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     onPress={async () => {
