@@ -16,7 +16,7 @@ class TextView extends Component {
         if(!this.props.onClick){
             return
         }
-        console.log("TextView点击事件",e.nativeEvent.message)
+        console.log("TextView点击事件触发",e.nativeEvent.message)
         this.props.onClick(e.nativeEvent.message)
     }
     render() {
